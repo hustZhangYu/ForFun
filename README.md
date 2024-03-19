@@ -1,2 +1,2 @@
 # ForFun
-Some interesting codes form me 
+Some interesting codes for me 
