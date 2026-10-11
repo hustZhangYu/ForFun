@@ -9,7 +9,7 @@ H0(L,1)=1;
 for m=1:L
     a=alpha_all(m);
     H1=H0+2*diag(cos(2*pi*a*linspace(1,L,L)));
-    [Ev,E]=eig(H1,'vector');
+    E=eig(H1);
     Data(m,:)=E;
 end
 
@@ -17,3 +17,4 @@ for m=1:L
    plot(m*ones(1,L),Data(m,:),'.')
    hold on;
 end
+
